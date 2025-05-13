@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="top-bar">
+    <div class="nav-links">
+        <a href="../formularios/formularioInicio.html">Inicio</a>
+        <a href="../tablas/tablaVehículos.html">Hangar</a>
+        <a href="../tablas/tablaFondos.html">Ilustraciones</a>
+    </div>
+    <div class="login-buttons">
+        <button onclick="openModal('registerModal')">Register</button>
+        <button onclick="openModal('loginModal')">Login</button>
+    </div>
+</div>
+
+<!-- Register Modal -->
+<div id="registerModal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('registerModal')">&times;</span>
+    <h2>Registro</h2>
+     <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" required>
+
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" required>
+
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Registrarse</button>
+        </form>
+  </div>
+</div>
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('loginModal')">&times;</span>
+    <h2>Iniciar Sesión</h2>
+    <form>
+        <input type="text" placeholder="Usuario" required>
+        <input type="password" placeholder="Contraseña" required>
+        <button type="submit">Entrar</button>
+        </form>
+  </div>
+</div>
+</body>
+</html>

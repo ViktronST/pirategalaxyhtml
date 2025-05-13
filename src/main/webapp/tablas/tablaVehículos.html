@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Galería Galáctica</title>
+  <link rel="stylesheet" href="../estilos/estiloHangarNaves.css">
+  <link rel="stylesheet" href="../estilos/estiloBarraNavegacion.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="navbar-container"></div>
+  <h1>Hangar de Naves</h1>
+  <div class="gallery">
+    <div class="ship" onclick="showInfo('Shock Gemini', 'Nave ágil con ataque eléctrico. Paraliza a los enemigos y es muy útil en cuanto a exploración de planetas se refiere.')">
+      <img src="../imagenes/naves/Shock_Gemini.png" alt="Nave 1">
+      <span class="label">Shock Gemini</span>
+    </div>
+    <div class="ship" onclick="showInfo('Tanque Mantis', 'Resistente, ideal para el frente. Cuenta con un escudo de partículas para compensar su torpe avance.')">
+      <img src="../imagenes/naves/Tanque_Mantis.png" alt="Nave 2">
+      <span class="label">Tanque Mantis</span>
+    </div>
+    <div class="ship" onclick="showInfo('Tormenta Antares', 'Nave capaz de inflingir altos niveles daño a sus enemigos. Equipada con cañones y misiles de alta gama.')">
+      <img src="../imagenes/naves/Tormenta_Antares.png" alt="Nave 3">
+      <span class="label">Tormenta Antares</span>
+    </div>
+    <div class="ship" onclick="showInfo('Defensor', 'Resistente, ideal para el frente. Cuenta con un escudo de partículas para compensar su torpe avance.')">
+      <img src="../imagenes/naves/Defensor.png" alt="Nave 4">
+      <span class="label">Defensor</span>
+    </div>
+    <div class="ship" onclick="showInfo('Nave Destructora', 'Nave capaz de inflingir altos niveles daño a sus enemigos. Equipada con cañones y misiles de alta gama.')">
+      <img src="../imagenes/naves/Nave_Destructora.png" alt="Nave 5">
+      <span class="label">Nave Destructora</span>
+    </div>
+    <div class="ship" onclick="showInfo('Alcón Milenario', 'Nave ágil con ataque eléctrico. Paraliza a los enemigos y es muy útil en cuanto a exploración de planetas se refiere.')">
+      <img src="../imagenes/naves/Alcón_Milenario.png" alt="Nave 6">
+      <span class="label">Alcón Milenario</span>
+    </div>
+    <div class="ship" onclick="showInfo('Médico Mizar', 'Médico capaz de reparar naves aliadas y escoltar a tropas. Cuenta con un campo repadaor extenso.')">
+      <img src="../imagenes/naves/Médico_Mizar.png" alt="Nave 7">
+      <span class="label">Médico Mizar</span>
+    </div>
+    <div class="ship" onclick="showInfo('Reparador Sol', 'Médico capaz de reparar naves aliadas y escoltar a tropas. Cuenta con un campo repadaor extenso.')">
+      <img src="../imagenes/naves/Reparador_Sol.png" alt="Nave 8">
+      <span class="label">Reparador Sol</span>
+    </div>
+  </div>
+
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <span id="popup-close" onclick="closePopup()">&times;</span>
+      <h2 id="popup-title"></h2>
+      <p id="popup-description"></p>
+    </div>
+  </div>
+
+  <button class="back-button" onclick="history.back()">⬅ Volver</button>
+
+  <script>
+    function showInfo(name, description) {
+      document.getElementById('popup-title').textContent = name;
+      document.getElementById('popup-description').textContent = description;
+      document.getElementById('popup').classList.remove('hidden');
+    }
+
+    function closePopup() {
+      document.getElementById('popup').classList.add('hidden');
+    }
+  </script>
+
+  <script>
+  fetch('tablaBarraNavegacion.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar-container').innerHTML = data;
+    });
+
+  function openModal(id) {
+    document.getElementById(id).classList.remove('hidden');
+  }
+
+  function closeModal(id) {
+    document.getElementById(id).classList.add('hidden');
+  }
+</script>
+
+</body>
+</html>

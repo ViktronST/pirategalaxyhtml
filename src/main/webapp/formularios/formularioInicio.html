@@ -1,62 +1,77 @@
-<!-- <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <title>Pirate Galaxy Inicio</title>
-    </head>
-
-    <body>
-        <form id="myForm" action = "#" method="get">
-            <label for="nombre">Usuario:</label>
-            <input type="text" id="nombre" name="nombre"></input><br><br>
-
-            <label for="contraseña">Contraseña:</label>
-            <input type="password" id="contraseña" name="contraseña"></input><br><br>
-
-            <button type="reset">Limpiar</button>
-            <a href="../tablas/tablaListadoVehiculos.html">
-                Entrar
-            </a>
-        </form>
-    </body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Pirate Galaxy Inicio</title>
-    <link rel="stylesheet" href="../estilos/estilo1.css">
+    <link rel="stylesheet" href="../estilos/estiloInicio.css">
 </head>
 <body>
+
     <div class="top-bar">
         <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">News</a>
-            <a href="#">Forum</a>
-            <a href="#">Media</a>
-            <a href="#">Merchandise</a>
+            <a href="../formularios/formularioInicio.html">Inicio</a>
+            <a href="../tablas/tablaVehículos.html">Hangar</a>
+            <a href="../tablas/tablaFondos.html">Ilustraciones</a>
         </div>
         <div class="login-buttons">
-            <button>Register</button>
-            <button>Login</button>
+            <button onclick="openModal('registerModal')">Register</button>
+            <button onclick="openModal('loginModal')">Login</button>
         </div>
     </div>
 
     <div class="hero-section">
-        <img src="../imagenes/banner-naves.jpg" alt="Banner Nave">
+        <img src="../imagenes/pirategalaxy_logo.png" alt="Banner Nave">
     </div>
 
-    <div class="login-form">
-        <form id="myForm" action="#" method="get">
-            <label for="nombre">Usuario:</label>
-            <input type="text" id="nombre" name="nombre"><br>
+    <div id="registerModal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('registerModal')">&times;</span>
+        <h2>Registro</h2>
+        <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
 
-            <label for="contraseña">Contraseña:</label>
-            <input type="password" id="contraseña" name="contraseña"><br>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
 
-            <button type="reset">Limpiar</button>
-            <a href="../tablas/tablaListadoVehiculos.html" class="enter-link">Entrar</a>
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" required>
+
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" required>
+
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Registrarse</button>
         </form>
     </div>
+    </div>
+
+    <div id="loginModal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('loginModal')">&times;</span>
+        <h2>Iniciar Sesión</h2>
+        <form>
+        <input type="text" placeholder="Usuario" required>
+        <input type="password" placeholder="Contraseña" required>
+        <button type="submit">Entrar</button>
+        </form>
+    </div>
+    </div>
+
+    <script>
+      function openModal(id) {
+        document.getElementById(id).classList.remove('hidden');
+      }
+
+      function closeModal(id) {
+        document.getElementById(id).classList.add('hidden');
+      }
+    </script>
+
 </body>
 </html>
