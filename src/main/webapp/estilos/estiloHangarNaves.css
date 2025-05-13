@@ -120,12 +120,12 @@ h1 {
 
 #popup-close {
   position: absolute;
-  top: 10px;    /* ✅ más cerca del borde interior */
+  top: 10px; 
   right: 10px;
   font-size: 26px;
   color: #00ffff;
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.5); /* ✅ fondo sutil */
+  /* background: rgba(0, 0, 0, 0.5); */
   padding: 2px 8px;
   border-radius: 4px;
   text-shadow: 0 0 6px #00ffff;
