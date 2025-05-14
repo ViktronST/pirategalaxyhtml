@@ -1,195 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Tabla Listado Vehículos</title>
-
+  <meta charset="UTF-8">
+  <title>Tabla Listado Guerreros</title>
+  <link rel="stylesheet" href="../estilos/estiloListaGuerreros.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-	<h1>Listado Guerreros</h1>
+  <a href="../formularios/formularioInicio.html" class="exit-top-right">
+    <div class="exit-button-container">
+      <img src="../imagenes/iconos/Boton_de_apagado.png" alt="Salir" title="Salir" class="icon-exit">
+    </div>
+  </a>
 
+  <h1>Listado Guerreros</h1>
+
+  <div class="filter-bar">
     <label for="tipo">Tipo:</label>
-        <select name="tipo" id="tipo">
-            <option value="28">Depredador</option>
-            <option value="45">Mantis</option>
-        </select>&nbsp;&nbsp;&nbsp;&nbsp;
+    <select name="tipo" id="tipo">
+      <option value="28">Depredador</option>
+      <option value="45">Mantis</option>
+    </select>
+    <button class="nav-button">Filtrar</button>
+  </div>
 
-    <button>Filtrar</button>&nbsp;&nbsp;&nbsp;&nbsp;
+  <table class="vehicle-table">
+    <thead>
+      <tr>
+        <th></th>
+        <th>NOMBRE</th>
+        <th>TIPO</th>
+        <th>FUERZA</th>
+        <th>RESISTENCIA</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#"><img src="../imagenes/iconos/cruz_roja.png" alt="Eliminar" class="icon-small"></a></td>
+        <td>Azdaha</td>
+        <td>Mantis</td>
+        <td>5</td>
+        <td>5</td>
+      </tr>
+      <!-- Filas vacías como plantilla -->
+      <tr><td colspan="5">&nbsp;</td></tr>
+      <tr><td colspan="5">&nbsp;</td></tr>
+      <tr><td colspan="5">&nbsp;</td></tr>
+      <tr><td colspan="5">&nbsp;</td></tr>
+      <tr><td colspan="5">&nbsp;</td></tr>
+      <tr><td colspan="5">&nbsp;</td></tr>
+      <tr><td colspan="5">&nbsp;</td></tr>
+      <tr><td colspan="5">&nbsp;</td></tr>
+      <tr><td colspan="5">&nbsp;</td></tr>
+      <tr><td colspan="5">&nbsp;</td></tr>
+    </tbody>
+  </table>
 
-    <a href="../formularios/formularioInicio.html">
-        <img src="../imagenes/iconos/cruz_roja.png" alt="Exit" title="Exit" width="20" height="20">
-    </a><br><br><br>
-
-	<table border="1">
-	
-		<thead>
-			<tr>
-				<th></th>
-				<th>NOMBRE</th>
-				<th>TIPO</th>
-				<th>FUERZA</th>
-				<th>RESISTENCIA</th>
-			</tr>
-		</thead>
-		
-		<tbody>
-			<tr>
-				<td>
-			      <a href="../formularios/formularioAñadirVehiculo.html">
-			        <img src="../imagenes/cruz_roja.png" alt="Eliminar" title="Eliminar" width="20" height="20">
-			      </a>
-			    </td>
-				<td>Azdaha</td>
-				<td>Mantis</td>
-				<td>5</td>
-				<td>5</td>
-			</tr>
-			<tr>
-				<td>&nbsp;&nbsp;</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>&nbsp;&nbsp;</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-            <tr>
-				<td>&nbsp;&nbsp;</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>&nbsp;&nbsp;</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-            <tr>
-				<td>&nbsp;&nbsp;</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>&nbsp;&nbsp;</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-            <tr>
-				<td>&nbsp;&nbsp;</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>&nbsp;&nbsp;</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-            <tr>
-				<td>&nbsp;&nbsp;</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-            <tr>
-				<td>&nbsp;&nbsp;</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-            <tr>
-				<td>&nbsp;&nbsp;</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-            <tr>
-				<td>&nbsp;&nbsp;</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-            <tr>
-				<td>&nbsp;&nbsp;</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-            <tr>
-				<td>&nbsp;&nbsp;</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-            <tr>
-				<td>&nbsp;&nbsp;</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-            <tr>
-				<td>&nbsp;&nbsp;</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-            <tr>
-				<td>&nbsp;&nbsp;</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-            <tr>
-				<td>&nbsp;&nbsp;</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-            <tr>
-				<td>&nbsp;&nbsp;</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-
-		</tbody>
-		
-		<tfoot>
-		
-		</tfoot>
-		
-	</table><br>
-
+  <div class="bottom-button">
     <a href="../formularios/formularioAñadirVehiculo.html">
-        <button>Añadir Guerreros</button>
+      <button class="nav-button">Añadir Guerreros</button>
     </a>
-
-
+  </div>
 </body>
 </html>

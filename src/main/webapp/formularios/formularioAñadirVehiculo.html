@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
-    <h1>Añadir Vehículo de Guerra</h1>
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario Añadir Vehículo</title>
+  <link rel="stylesheet" href="../estilos/estiloAñadirVehiculos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="../tablas/tablaListadoVehiculos.html" class="exit-top-right">
+    <div class="exit-button-container">
+      <img src="../imagenes/iconos/Boton_de_apagado.png" alt="Salir" title="Salir" class="icon-exit">
+    </div>
+  </a>
 
-    <head>
-        <title>Formulario Añadir Vehículo</title>
-    </head>
+  <h1>Añadir Vehículo de Guerra</h1>
 
-    <body>
-        <form id="myForm" action = "#" method="get">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre"></input><br><br>
+  <form class="form-container" action="#" method="get">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
 
-            <label for="tipo">Tipo:</label>
-            <select name="tipo" id="tipo">
-                <option value="28">Nave Depredadora</option>
-                <option value="45">Tanque Mantis</option>
-            </select><br><br>
+    <label for="tipo">Tipo:</label>
+    <select name="tipo" id="tipo">
+      <option value="28">Nave Depredadora</option>
+      <option value="45">Tanque Mantis</option>
+    </select>
 
-            <label for="ataque">Ataque:</label>
-            <input type="number" id="ataque" name="ataque"></input><br><br>
+    <label for="ataque">Ataque:</label>
+    <input type="number" id="ataque" name="ataque" required>
 
-            <label for="defensa">Defensa</label>
-            <input type="number" id="defensa" name="defensa"></input><br><br>
+    <label for="defensa">Defensa:</label>
+    <input type="number" id="defensa" name="defensa" required>
 
-            <button type="reset">Limpiar</button>
-            <a href="../tablas/tablaListadoVehiculos.html">
-                Guardar
-            </a>
-
-            <i class="fi fi-ss-settings"></i>
-
-        </form>
-    </body>
+    <div class="form-buttons">
+      <button type="reset" class="nav-button">Limpiar</button>
+      <button type="submit" class="nav-button">Guardar</button>
+    </div>
+  </form>
+</body>
 </html>

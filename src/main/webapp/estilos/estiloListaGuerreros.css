@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-image: url('../imagenes/fondos/PG_storyimage_34.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #00ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  margin-top: 60px;
+  font-size: 2.5em;
+  text-shadow: 0 0 10px #00ffff;
+  text-align: center;
+}
+
+.exit-top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.exit-button-container {
+  background-color: red;
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px red;
+}
+
+.icon-exit {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.icon-exit:hover {
+  transform: scale(1.2);
+}
+
+.filter-bar {
+  margin: 20px 0;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+select {
+  padding: 8px;
+  border: 1px solid #00ffff;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #00ffff;
+  font-size: 1em;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #00ffff;
+  border: 2px solid #00ffff;
+  color: #000;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: transparent;
+  color: #00ffff;
+}
+
+.vehicle-table {
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 1200px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid #00ffff;
+  box-shadow: 0 0 20px #00ffff;
+  color: #00ffff;
+  margin-bottom: 30px;
+}
+
+.vehicle-table th, .vehicle-table td {
+  border: 1px solid #00ffff;
+  padding: 12px;
+  text-align: center;
+}
+
+.vehicle-table th {
+  background-color: rgba(0, 255, 255, 0.2);
+  text-shadow: 0 0 5px #00ffff;
+}
+
+.vehicle-table tr:hover {
+  background-color: rgba(0, 255, 255, 0.1);
+}
+
+.icon-small {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.bottom-button {
+  margin-bottom: 40px;
+}

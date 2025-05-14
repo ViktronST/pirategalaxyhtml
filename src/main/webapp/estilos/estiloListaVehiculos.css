@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-image: url('../imagenes/fondos/PG_storyimage_34.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ff8000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  margin-top: 40px;
+  font-size: 2.5em;
+  text-shadow: 0 0 10px #8000ff;
+}
+
+.buttons-top, .buttons-bottom {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #ff8000;
+  border: 2px solid #8000ff;
+  color: #000;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: transparent;
+  color: #8000ff;
+}
+
+
+.icon-exit {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.icon-exit:hover {
+  transform: scale(1.2);
+}
+
+.vehicle-table {
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 1200px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid #8000ff;
+  box-shadow: 0 0 20px #8000ff;
+  color: #ff8000;
+}
+
+.vehicle-table th, .vehicle-table td {
+  border: 1px solid #8000ff;
+  padding: 12px;
+  text-align: center;
+}
+
+.vehicle-table th {
+  background-color: rgba(0, 255, 255, 0.2);
+  text-shadow: 0 0 5px #8000ff;
+}
+
+.vehicle-table tr:hover {
+  background-color: rgba(0, 255, 255, 0.1);
+}
+
+.icon-small {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.icon-large {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.exit-top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.exit-button-container {
+  background-color: red;
+  padding: 8px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px red;
+}
+
+
