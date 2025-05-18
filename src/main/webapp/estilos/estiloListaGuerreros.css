@@ -88,15 +88,23 @@ select {
   margin-bottom: 30px;
 }
 
-.vehicle-table th, .vehicle-table td {
-  border: 1px solid #ff8000;
-  padding: 12px;
+.vehicle-table th,
+.vehicle-table td {
+  border: 1px solid rgba(255, 128, 0, 0.6);
+  padding: 16px 12px;
   text-align: center;
+  vertical-align: middle;
 }
 
 .vehicle-table th {
   background-color: rgba(0, 255, 255, 0.2);
   text-shadow: 0 0 5px #ff8000;
+}
+
+.vehicle-table td[colspan="5"] {
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: none;
 }
 
 .vehicle-table tr:hover {
@@ -107,6 +115,16 @@ select {
   width: 20px;
   height: 20px;
   cursor: pointer;
+}
+
+.icon-warrior {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 6px #ff8000;
+  display: block;
+  margin: 0 auto;
 }
 
 .bottom-button {
